@@ -13,10 +13,10 @@ void full_permutation(int l) {
 	}
 	for (int i = 0; i < n; i++) {
 		if (!used[i]) {
-			used[i] = 1;
+			used[i] = 1;//this number has been used.
 			rcd[l] = num[i];
-			full_permutation(l + 1);
-			used[i] = 0;
+			full_permutation(l + 1);//next position
+			used[i] = 0;//clear the flag
 		}
 	}
 }
